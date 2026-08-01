@@ -573,3 +573,112 @@ section h2{
     transform: scale(1.08);
 
 }
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    header{
+
+        flex-direction: column;
+        padding: 15px 5%;
+        gap: 15px;
+
+    }
+
+    .logo h1{
+
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+
+    }
+
+    nav ul{
+
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .hero{
+
+        padding-top: 120px;
+
+    }
+
+    .hero h2{
+
+        font-size: 2.5rem;
+
+    }
+
+    .hero p{
+
+        font-size: 1rem;
+
+    }
+
+    .titulo-seccion h2,
+    .titulo-coleccion h2{
+
+        font-size: 2rem;
+
+    }
+
+    .categorias{
+
+        flex-direction: column;
+
+    }
+
+    .categoria-card{
+
+        height: 320px;
+
+    }
+
+    .logos-marcas{
+
+        gap: 20px;
+
+    }
+
+    .logos-marcas img{
+
+        width: 100px;
+        height: 50px;
+
+    }
+
+    .grid-destacados,
+    .grid-perfumes{
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .imagen-perfume{
+
+        height: 220px;
+
+    }
+
+    .card-perfume img{
+
+        height: 220px;
+
+    }
+
+    .card-perfume h3{
+
+        font-size: 1rem;
+
+    }
+
+    .card-perfume span{
+
+        font-size: 1rem;
+
+    }
+
+}
