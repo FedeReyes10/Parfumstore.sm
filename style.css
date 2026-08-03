@@ -639,14 +639,14 @@ section h2{
 
     .logos-marcas{
 
-        gap: 25px;
+        gap: 20px;
 
     }
 
     .logos-marcas img{
 
-        width: 100px;
-        height: 80px;
+        width: 200px;
+        height: 100px;
 
     }
 
