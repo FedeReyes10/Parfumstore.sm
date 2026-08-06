@@ -933,3 +933,44 @@ footer p{
 .resultados-busqueda {
     padding: 60px 5%;
 }
+/* ================= AJUSTES CELULAR ================= */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 40px 5%;
+    }
+
+
+    .buscador {
+        padding: 20px 5%;
+    }
+
+
+    .buscador input {
+
+        width: 100%;
+        padding: 14px;
+        border-radius: 10px;
+        font-size: 1rem;
+
+    }
+
+
+    .logos-marcas img {
+
+        width: 150px;
+        height: 80px;
+        object-fit: contain;
+
+    }
+
+
+    .grid-destacados,
+    .grid-perfumes {
+
+        gap: 15px;
+
+    }
+
+}
