@@ -1,6 +1,9 @@
-const contenedorMasculinos = document.getElementById("perfumes-masculinos");
-const contenedorFemeninos = document.getElementById("perfumes-femeninos");
 const contenedorDestacados = document.querySelector(".grid-destacados");
+const inputBuscar = document.getElementById("buscar");
+const resultadosBusqueda = document.getElementById("resultados");
+
+console.log(inputBuscar);
+console.log("App cargada");
 
 
 function crearCard(perfume) {
@@ -11,7 +14,9 @@ function crearCard(perfume) {
 
         <div class="imagen-perfume">
 
-            <img src="${perfume.imagen}" alt="${perfume.nombre}">
+            ${perfume.etiqueta ? `<div class="etiqueta">${perfume.etiqueta}</div>` : ""}
+
+            <img src="imagenes/perfumes/${perfume.imagen}" alt="${perfume.nombre}">
 
         </div>
 
@@ -21,9 +26,7 @@ function crearCard(perfume) {
 
         <span>$${perfume.precio.toLocaleString()}</span>
 
-        <a 
-        href="https://wa.me/542634215719?text=Hola,%20quiero%20consultar%20por%20${encodeURIComponent(perfume.nombre)}"
-        target="_blank">
+        <a href="https://wa.me/542634215719?text=Hola,%20quiero%20consultar%20por%20${encodeURIComponent(perfume.nombre)}" target="_blank">
 
             Consultar
 
@@ -36,30 +39,141 @@ function crearCard(perfume) {
 }
 
 
-// Cargar perfumes
 
-perfumes.forEach(perfume => {
+function mostrarPerfumes(lista, buscando = false) {
 
 
-    if(perfume.genero === "Masculino"){
+    contenedorDestacados.innerHTML = "";
 
-        contenedorMasculinos.innerHTML += crearCard(perfume);
+    document.querySelectorAll(".grid-perfumes").forEach(grid => {
+        grid.innerHTML = "";
+    });
 
+
+
+    lista.forEach(perfume => {
+
+
+        // Cuando se usa el buscador
+        if (buscando) {
+
+            console.log("Mostrando:", perfume.nombre);
+
+            contenedorDestacados.innerHTML += crearCard(perfume);
+
+            return;
+
+        }
+
+
+
+        // DESTACADOS
+
+        if (perfume.destacado) {
+
+            contenedorDestacados.innerHTML += crearCard(perfume);
+
+        }
+
+
+
+        // CATEGORIAS
+
+        let marca = perfume.marca.toLowerCase();
+
+
+
+        if (marca === "french avenue") {
+
+            marca = "french_avenue";
+
+        }
+
+
+
+        if (
+            marca === "bharara" ||
+            marca === "xerjoff" ||
+            marca === "al haramain"
+        ) {
+
+            marca = "otras";
+
+        }
+
+
+
+        const genero = perfume.genero.toLowerCase();
+
+
+
+        const contenedor = document.getElementById(`${marca}-${genero}s`);
+
+
+
+        if (contenedor) {
+
+            contenedor.innerHTML += crearCard(perfume);
+
+        }
+
+
+    });
+
+
+}
+
+
+
+// BUSCADOR
+
+inputBuscar.addEventListener("input", () => {
+
+    const texto = inputBuscar.value.toLowerCase();
+
+    if (texto === "") {
+        resultadosBusqueda.innerHTML = "";
+        mostrarPerfumes(perfumes);
+        return;
     }
 
+    const filtrados = perfumes.filter(perfume => {
 
-    if(perfume.genero === "Femenino"){
+        return (
+            perfume.nombre.toLowerCase().includes(texto) ||
+            perfume.marca.toLowerCase().includes(texto) ||
+            perfume.genero.toLowerCase().includes(texto)
+        );
 
-        contenedorFemeninos.innerHTML += crearCard(perfume);
+    });
 
-    }
+    console.log("RESULTADO FINAL:", filtrados);
 
+    resultadosBusqueda.innerHTML = "";
 
-    if(perfume.destacado){
+    filtrados.forEach(perfume => {
 
-        contenedorDestacados.innerHTML += crearCard(perfume);
+        resultadosBusqueda.innerHTML += crearCard(perfume);
 
-    }
-
+    });
 
 });
+
+
+
+inputBuscar.addEventListener("keydown", (e) => {
+
+    if (e.key === "Enter") {
+
+        resultadosBusqueda.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }
+
+});
+
+
+// CARGA INICIAL
+
+mostrarPerfumes(perfumes);
