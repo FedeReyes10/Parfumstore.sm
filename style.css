@@ -928,3 +928,8 @@ footer p{
     margin-bottom: 35px;
 
 }
+/* ================= RESULTADOS DE BÚSQUEDA ================= */
+
+.resultados-busqueda {
+    padding: 60px 5%;
+}
