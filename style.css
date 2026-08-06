@@ -701,6 +701,64 @@ section h2{
         height:180px;
         object-fit:contain;
     }
+    section{
+    padding:25px 5%;
+}
+
+
+.titulo-seccion{
+    margin-bottom:15px;
+}
+
+
+.titulo-seccion p{
+    margin-bottom:15px;
+}
+    .grid-destacados,
+    .grid-perfumes{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+        gap:12px;
+    }
+
+
+    .card-perfume{
+        width:100%;
+        overflow:hidden;
+    }
+
+
+    .card-perfume .imagen-perfume{
+        height:170px;
+    }
+
+
+    .card-perfume img{
+        width:100%;
+        height:100%;
+        object-fit:contain;
+    }
+
+
+    .card-perfume h3{
+        font-size:0.9rem;
+    }
+
+
+    .card-perfume span{
+        font-size:0.95rem;
+    }
+
+
+    .etiqueta{
+        font-size:0.7rem;
+        padding:5px 8px;
+    }
+
+
+    .logos-marcas img{
+        width:100px;
+        height:60px;
+    }
 
 }
     /*==========================
