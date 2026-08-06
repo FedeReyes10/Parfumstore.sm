@@ -603,65 +603,103 @@ section h2{
         gap: 15px;
     }
 
+
     .logo h1{
         font-size: 1.5rem;
         letter-spacing: 2px;
         text-align: center;
     }
 
+
     .buscador{
-        width: 100%;
+        width:100%;
+        padding:20px 5%;
     }
+
 
     .buscador input{
-        width: 100%;
-        padding: 12px;
-        font-size: 1rem;
+        width:100%;
+        padding:14px;
+        border-radius:10px;
+        font-size:1rem;
     }
+
 
     nav{
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        width:100%;
+        display:flex;
+        justify-content:center;
     }
+
 
     nav ul{
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        width: 100%;
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+        width:100%;
     }
+
 
     nav a{
-        font-size: 1rem;
+        font-size:1rem;
     }
+
 
     .hero{
-        height: 55vh;
-        padding: 20px;
-        text-align: center;
+        height:55vh;
+        padding:20px;
+        text-align:center;
     }
+
 
     .hero h2{
-        font-size: 2rem;
+        font-size:2rem;
     }
+
 
     .hero p{
-        font-size: 1rem;
+        font-size:1rem;
     }
 
+
+    /* Ocultar categorías grandes en celular */
     .categorias{
-        grid-template-columns: 1fr;
-        padding: 20px;
+        display:none;
     }
+
 
     .productos{
-        grid-template-columns: 1fr;
-        padding: 20px;
+        grid-template-columns:1fr;
+        padding:20px;
     }
 
+
     .card{
-        width: 100%;
+        width:100%;
+    }
+
+
+    .logos-marcas img{
+        width:150px;
+        height:80px;
+        object-fit:contain;
+    }
+
+
+    .grid-destacados,
+    .grid-perfumes{
+        gap:15px;
+    }
+
+
+    .grid-destacados{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+
+    .card-perfume img{
+        height:180px;
+        object-fit:contain;
     }
 
 }
@@ -898,44 +936,77 @@ footer p{
 .resultados-busqueda {
     padding: 60px 5%;
 }
-/* ================= AJUSTES CELULAR ================= */
-
-@media (max-width: 768px) {
-
-    section {
-        padding: 40px 5%;
-    }
 
 
-    .buscador {
-        padding: 20px 5%;
-    }
+
+/* ================= EXPLORAR MARCAS ================= */
+
+.explorar-marcas{
+    padding:60px 8%;
+    text-align:center;
+}
 
 
-    .buscador input {
-
-        width: 100%;
-        padding: 14px;
-        border-radius: 10px;
-        font-size: 1rem;
-
-    }
-
-
-    .logos-marcas img {
-
-        width: 150px;
-        height: 80px;
-        object-fit: contain;
-
-    }
+.lista-marcas{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:30px 0;
+}
 
 
-    .grid-destacados,
-    .grid-perfumes {
+.lista-marcas button,
+#opcionesMarca button{
 
-        gap: 15px;
+    background:#D4AF37;
+    color:#111;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
 
-    }
+}
 
+
+.lista-marcas button:hover,
+#opcionesMarca button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+#opcionesMarca{
+
+    margin-top:30px;
+
+}
+
+
+#opcionesMarca h3{
+
+    font-family:Cinzel, serif;
+    font-size:28px;
+    margin-bottom:20px;
+
+}
+
+
+#opcionesMarca button{
+
+    margin:5px;
+
+}
+
+
+#resultadoMarca{
+
+    margin-top:40px;
+
+}
+#resultados{
+    margin-top:20px;
 }

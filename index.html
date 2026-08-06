@@ -78,26 +78,14 @@
     <div class="contenedor-perfumes">
 
     </div>
+     <section>
 
     <div class="buscador">
 
-     <input
-         type="text"
-        id="buscar"
-        placeholder="🔍 Buscar perfume o marca...">
-
-     </div>
-
-    <div id="resultados-busqueda"></div>
-
-</section>
-<section class="resultados-busqueda">
-
-    <div class="titulo-seccion">
-
-        <span>RESULTADOS</span>
-
-        <h2>Resultados de búsqueda</h2>
+        <input
+            type="text"
+            id="buscar"
+            placeholder="🔍 Buscar perfume o marca...">
 
     </div>
 
@@ -105,7 +93,7 @@
 
 </section>
 
-    <div id="categorias" class="categorias">
+  <div id="categorias" class="categorias">
 
     <div class="categoria-card masculino">
 
@@ -192,106 +180,57 @@
     <div class="grid-destacados"></div>
 
 </section>
+<!-- ================= EXPLORAR POR MARCA ================= -->
 
-<!-- ================= COLECCIÓN MASCULINA ================= -->
+<section class="explorar-marcas">
 
-<section id="masculinos" class="coleccion">
+    <div class="titulo-seccion">
 
-    <div class="titulo-coleccion">
+        <span>EXPLORAR</span>
 
-        <span>COLECCIÓN</span>
+        <h2>Buscar por marca</h2>
 
-        <h2>Perfumes Masculinos</h2>
+        <p>
+            Elegí una marca y encontrá tu perfume ideal.
+        </p>
+
+    </div>
+
+
+    <div class="lista-marcas">
+
+        <button onclick="mostrarOpcionesMarca('Lattafa')">
+            LATTAFA
+        </button>
+
+        <button onclick="mostrarOpcionesMarca('Armaf')">
+            ARMAF
+        </button>
+
+        <button onclick="mostrarOpcionesMarca('Afnan')">
+            AFNAN
+        </button>
+
+        <button onclick="mostrarOpcionesMarca('Rasasi')">
+            RASASI
+        </button>
+
+        <button onclick="mostrarOpcionesMarca('French Avenue')">
+            FRENCH AVENUE
+        </button>
 
     </div>
 
-    <!-- LATTAFA -->
-    <div class="marca-perfumes">
 
-    <h3 class="titulo-marca">LATTAFA</h3>
+    <div id="opcionesMarca"></div>
 
-    <div id="lattafa-masculinos" class="grid-perfumes"></div>
 
-     </div>
+    <div id="resultadoMarca" class="grid-perfumes"></div>
 
-    <!-- ARMAF -->
-    <div class="marca-perfumes">
-
-    <h3 class="titulo-marca">ARMAF</h3>
-
-    <div id="armaf-masculinos" class="grid-perfumes"></div>
-
-     </div>
-
-    <!-- AFNAN -->
-    <div class="marca-perfumes">
-
-    <h3 class="titulo-marca">AFNAN</h3>
-
-    <div id="afnan-masculinos" class="grid-perfumes"></div>
-
-     </div>
-
-    <!-- RASASI -->
-    <div class="marca-perfumes">
-
-    <h3 class="titulo-marca">RASASI</h3>
-
-    <div id="rasasi-masculinos" class="grid-perfumes"></div>
-
-     </div>
-
-    <!-- FRENCH AVENUE -->
-    <div class="marca-perfumes">
-
-    <h3 class="titulo-marca">FRENCH AVENUE</h3>
-
-    <div id="french_avenue-masculinos" class="grid-perfumes"></div>
-
-     </div>
-
-    <!-- OTRAS MARCAS -->
-    <div class="marca-perfumes">
-
-        <h3 class="titulo-marca">Otras Marcas</h3>
-
-        <div id="otras-masculinos" class="grid-perfumes"></div>
-
-    </div>
 
 </section>
 
-<!-- ================= COLECCIÓN FEMENINA ================= -->
 
-<section id="femeninos" class="coleccion">
-
-    <div class="titulo-coleccion">
-
-        <span>COLECCIÓN</span>
-
-        <h2>Perfumes Femeninos</h2>
-
-    </div>
-
-    <!-- LATTAFA -->
-    <div class="marca-perfumes">
-
-    <h3 class="titulo-marca">LATTAFA</h3>
-
-    <div id="lattafa-femeninos" class="grid-perfumes"></div>
-
-     </div>
-
-    <!-- ARMAF -->
-    <div class="marca-perfumes">
-
-    <h3 class="titulo-marca">ARMAF</h3>
-
-    <div id="armaf-femeninos" class="grid-perfumes"></div>
-
-     </div>
-
-</section>
     <!-- ================= CONTACTO ================= -->
 
     <section id="contacto">
