@@ -447,7 +447,7 @@ const perfumes = [
         precio: 55000,
         destacado: true,
         etiqueta: "Popular",
-        imagen: "odyssey_spectra_edp.jpeg",
+        imagen: "odyssey_spectra_EDP.jpeg",
 
         descripcion: "Fragancia dulce, especiada y amaderada, con un perfil llamativo y moderno.",
 
