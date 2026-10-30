@@ -12,6 +12,32 @@ console.log(inputBuscar);
 console.log("App cargada");
 
 
+// ================= LISTA COMPLETA DEL CATALOGO =================
+
+const productos = [...perfumes, ...accesorios];
+
+
+// ================= UTILIDADES =================
+
+// Devuelve la carpeta de imágenes según el tipo de producto
+
+function carpetaImagen(producto) {
+
+    return producto.genero === "Accesorio"
+        ? "imagenes/accesorios/"
+        : "imagenes/perfumes/";
+
+}
+
+// Devuelve la palabra justa para el mensaje de WhatsApp
+
+function tipoProducto(producto) {
+
+    return producto.genero === "Accesorio" ? "producto" : "perfume";
+
+}
+
+
 // ================= CREAR CARD =================
 
 function crearCard(perfume) {
@@ -24,7 +50,7 @@ function crearCard(perfume) {
 
             ${perfume.etiqueta ? `<div class="etiqueta">${perfume.etiqueta}</div>` : ""}
 
-            <img src="imagenes/perfumes/${perfume.imagen}" alt="${perfume.nombre}">
+            <img src="${carpetaImagen(perfume)}${perfume.imagen}" alt="${perfume.nombre}">
 
         </div>
 
@@ -38,7 +64,7 @@ function crearCard(perfume) {
             Ver detalles
         </a>
 
-        <a href="https://wa.me/542634215719?text=${encodeURIComponent(`¡Hola! 👋 Me interesó el perfume ${perfume.nombre} que vi en la página. ¿Podrían brindarme más información sobre esta fragancia? ¡Muchas gracias!`)}" target="_blank">
+        <a href="https://wa.me/542634215719?text=${encodeURIComponent(`¡Hola! 👋 Me interesó el ${tipoProducto(perfume)} ${perfume.nombre} que vi en la página. ¿Podrían brindarme más información? ¡Muchas gracias!`)}" target="_blank">
 
             Consultar
 
@@ -135,14 +161,14 @@ inputBuscar.addEventListener("input", () => {
 
     if (texto === "") {
 
-        mostrarPerfumes(perfumes);
+        mostrarPerfumes(productos);
 
         return;
 
     }
 
 
-    const filtrados = perfumes.filter(perfume => {
+    const filtrados = productos.filter(perfume => {
 
         return (
 
@@ -336,14 +362,27 @@ function mostrarCategoria(genero) {
 
     perfumesGenero.innerHTML = "";
 
-    tituloGenero.innerHTML = `Perfumes ${genero}s`;
+    tituloGenero.innerHTML = genero === "Accesorio"
+        ? "Accesorios"
+        : `Perfumes ${genero}s`;
 
 
-    const filtrados = perfumes.filter(perfume =>
+    const filtrados = productos.filter(perfume =>
 
         perfume.genero === genero
 
     );
+
+
+    if (filtrados.length === 0) {
+
+        perfumesGenero.innerHTML = `
+            <p class="sin-productos">
+                Próximamente vas a encontrar productos en esta categoría.
+            </p>
+        `;
+
+    }
 
 
     filtrados.forEach(perfume => {
@@ -374,20 +413,50 @@ window.addEventListener("resize", cambiarCatalogo);
 
 // ================= CARGA INICIAL =================
 
-mostrarPerfumes(perfumes);
+mostrarPerfumes(productos);
+
+
+// ================= SECCIÓN DE ACCESORIOS (SIEMPRE VISIBLE) =================
+// Muestra los accesorios cargados en su propia sección,
+// debajo de "Buscar por marca".
+
+const gridAccesorios = document.getElementById("gridAccesorios");
+
+if (gridAccesorios) {
+
+    if (accesorios.length === 0) {
+
+        gridAccesorios.innerHTML = `
+            <p class="sin-productos">
+                Próximamente vas a encontrar accesorios en esta categoría.
+            </p>
+        `;
+
+    } else {
+
+        accesorios.forEach(accesorio => {
+
+            gridAccesorios.innerHTML += crearCard(accesorio);
+
+        });
+
+    }
+
+}
 
 
 // ================= MODAL =================
 
 function abrirModal(id) {
 
-    const perfume = perfumes.find(p => p.id === id);
+    const perfume = productos.find(p => p.id === id);
 
     if (!perfume) return;
 
+    const esAccesorio = perfume.genero === "Accesorio";
 
     document.getElementById("modalImagen").src =
-        `imagenes/perfumes/${perfume.imagen}`;
+        carpetaImagen(perfume) + perfume.imagen;
 
     document.getElementById("modalImagen").alt =
         perfume.nombre;
@@ -403,7 +472,13 @@ function abrirModal(id) {
 
     document.getElementById("modalDescripcion").textContent =
         perfume.descripcion ||
-        "La información detallada de esta fragancia estará disponible muy pronto.";
+        "La información detallada estará disponible muy pronto.";
+
+    // Las notas de salida, corazón, fondo y estación
+    // solo aplican a perfumes.
+
+    document.getElementById("modalNotas").style.display =
+        esAccesorio ? "none" : "block";
 
     document.getElementById("modalSalida").textContent =
         perfume.salida || "Próximamente.";
@@ -419,7 +494,7 @@ function abrirModal(id) {
 
     document.getElementById("modalWhatsapp").href =
         `https://wa.me/542634215719?text=${encodeURIComponent(
-            `¡Hola! 👋 Me interesó el perfume ${perfume.nombre} que vi en la página. ¿Podrían brindarme más información sobre esta fragancia?`
+            `¡Hola! 👋 Me interesó el ${tipoProducto(perfume)} ${perfume.nombre} que vi en la página. ¿Podrían brindarme más información?`
         )}`;
 
     document.getElementById("modalPerfume").style.display = "flex";

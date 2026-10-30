@@ -68,7 +68,7 @@ const perfumes = [
         nombre: "9PM Elixir EDP",
         marca: "Afnan",
         genero: "Masculino",
-        precio: 90000,
+        precio: 80000,
         destacado: true,
         etiqueta: "Nuevo",
         imagen: "9pm_elixir_edp.jpeg",
@@ -89,7 +89,7 @@ const perfumes = [
         nombre: "Amber Oud Gold EDP",
         marca: "Al Haramain",
         genero: "Masculino",
-        precio: 75000,
+        precio: 90000,
         destacado: true,
         etiqueta: "Premium",
         imagen: "amber_oud_gold_edp.jpeg",
@@ -172,7 +172,7 @@ const perfumes = [
         nombre: "Bharara King",
         marca: "Bharara",
         genero: "Masculino",
-        precio: 115000,
+        precio: 110000,
         destacado: true,
         etiqueta: "Premium",
         imagen: "bharara_king.jpeg",
@@ -193,7 +193,7 @@ const perfumes = [
         nombre: "Erba Pura",
         marca: "Xerjoff",
         genero: "Masculino",
-        precio: 85000,
+        precio: 60000,
         destacado: true,
         etiqueta: "Exclusivo",
         imagen: "erba_pura.jpeg",
@@ -214,7 +214,7 @@ const perfumes = [
         nombre: "Bade'e Oud Amethyst",
         marca: "Lattafa",
         genero: "Masculino",
-        precio: 65000,
+        precio: 55000,
         destacado: false,
         etiqueta: "",
         imagen: "badee_oud_amethyst.jpg",
@@ -235,7 +235,7 @@ const perfumes = [
         nombre: "The Kingdom",
         marca: "Lattafa",
         genero: "Masculino",
-        precio: 70000,
+        precio: 68000,
         destacado: true,
         etiqueta: "Nuevo",
         imagen: "the_kingdom.jpg",
@@ -256,7 +256,7 @@ const perfumes = [
         nombre: "Khamrah Qahwa",
         marca: "Lattafa",
         genero: "Masculino",
-        precio: 60000,
+        precio: 50000,
         destacado: true,
         etiqueta: "Popular",
         imagen: "khamrah_qahwa.jpeg",
@@ -277,7 +277,7 @@ const perfumes = [
         nombre: "Khamrah Dukhan",
         marca: "Lattafa",
         genero: "Masculino",
-        precio: 50000,
+        precio: 55000,
         destacado: false,
         etiqueta: "",
         imagen: "khamrah_dukhan.jpg",
@@ -298,7 +298,7 @@ const perfumes = [
         nombre: "Asad Green",
         marca: "Lattafa",
         genero: "Masculino",
-        precio: 48000,
+        precio: 50000,
         destacado: false,
         etiqueta: "",
         imagen: "asad_green.jpg",
@@ -319,7 +319,7 @@ const perfumes = [
         nombre: "Asad Bourbon",
         marca: "Lattafa",
         genero: "Masculino",
-        precio: 60000,
+        precio: 75000,
         destacado: true,
         etiqueta: "Nuevo",
         imagen: "asad_bourbon.jpeg",
@@ -340,7 +340,7 @@ const perfumes = [
         nombre: "Hayaati Black",
         marca: "Lattafa",
         genero: "Masculino",
-        precio: 48000,
+        precio: 50000,
         destacado: false,
         etiqueta: "",
         imagen: "hayaati_black.jpeg",
@@ -361,7 +361,7 @@ const perfumes = [
         nombre: "Hayaati Gold Elixir",
         marca: "Lattafa",
         genero: "Masculino",
-        precio: 45000,
+        precio: 48000,
         destacado: false,
         etiqueta: "",
         imagen: "hayaati_gold_elixir.jpeg",
@@ -402,7 +402,7 @@ const perfumes = [
         nombre: "Odyssey Homme White",
         marca: "Armaf",
         genero: "Masculino",
-        precio: 65000,
+        precio: 68000,
         destacado: true,
         etiqueta: "Premium",
         imagen: "odyssey_homme_white.jpeg",
@@ -423,7 +423,7 @@ const perfumes = [
         nombre: "Odyssey Homme",
         marca: "Armaf",
         genero: "Masculino",
-        precio: 55000,
+        precio: 58000,
         destacado: false,
         etiqueta: "",
         imagen: "odyssey_homme.jpg",
@@ -444,7 +444,7 @@ const perfumes = [
         nombre: "Odyssey Spectra EDP",
         marca: "Armaf",
         genero: "Masculino",
-        precio: 55000,
+        precio: 52000,
         destacado: true,
         etiqueta: "Popular",
         imagen: "odyssey_spectra_EDP.jpeg",
@@ -465,7 +465,7 @@ const perfumes = [
         nombre: "Odyssey Sky Mandarin",
         marca: "Armaf",
         genero: "Masculino",
-        precio: 55000,
+        precio: 58000,
         destacado: false,
         etiqueta: "",
         imagen: "odyssey_mandarin_sky.jpeg",
@@ -507,7 +507,7 @@ const perfumes = [
         nombre: "Odyssey Mandarin Sky Elixir",
         marca: "Armaf",
         genero: "Masculino",
-        precio: 68000,
+        precio: 70000,
         destacado: true,
         etiqueta: "Nuevo",
         imagen: "odyssey_mandarin_sky_elixir.jpeg",
@@ -528,7 +528,7 @@ const perfumes = [
         nombre: "Club de Nuit Intense EDT",
         marca: "Armaf",
         genero: "Masculino",
-        precio: 88000,
+        precio: 70000,
         destacado: true,
         etiqueta: "Más vendido",
         imagen: "club_de_nuite_intense_men.jpeg",
@@ -549,7 +549,7 @@ const perfumes = [
         nombre: "Club de Nuit Untold",
         marca: "Armaf",
         genero: "Masculino",
-        precio: 90000,
+        precio: 75000,
         destacado: true,
         etiqueta: "Premium",
         imagen: "club_de_nuit_untold.jpeg",
@@ -570,7 +570,7 @@ const perfumes = [
         nombre: "Club de Nuit Oud",
         marca: "Armaf",
         genero: "Masculino",
-        precio: 85000,
+        precio: 100000,
         destacado: true,
         etiqueta: "Premium",
         imagen: "club_de_nuit_oud.jpeg",
@@ -590,7 +590,7 @@ const perfumes = [
         nombre: "Hawas Black",
         marca: "Rasasi",
         genero: "Masculino",
-        precio: 68000,
+        precio: 70000,
         destacado: true,
         etiqueta: "Popular",
         imagen: "hawas_black.jpeg",
@@ -611,7 +611,7 @@ const perfumes = [
         nombre: "Hawas Yellow",
         marca: "Rasasi",
         genero: "Masculino",
-        precio: 58000,
+        precio: 60000,
         destacado: false,
         etiqueta: "",
         imagen: "hawas_yellow.jpg",
@@ -632,7 +632,7 @@ const perfumes = [
         nombre: "Hawas Ice",
         marca: "Rasasi",
         genero: "Masculino",
-        precio: 65000,
+        precio: 70000,
         destacado: true,
         etiqueta: "Nuevo",
         imagen: "hawas_ice.jpeg",
@@ -674,7 +674,7 @@ const perfumes = [
         nombre: "Vulcan Feu",
         marca: "French Avenue",
         genero: "Masculino",
-        precio: 62000,
+        precio: 78000,
         destacado: true,
         etiqueta: "Nuevo",
         imagen: "vulcan_feu.jpeg",
@@ -695,7 +695,7 @@ const perfumes = [
         nombre: "Vulcan",
         marca: "French Avenue",
         genero: "Masculino",
-        precio: 62000,
+        precio: 78000,
         destacado: false,
         etiqueta: "",
         imagen: "vulcan.jpeg",
@@ -716,7 +716,7 @@ const perfumes = [
         nombre: "Liquid Brun",
         marca: "French Avenue",
         genero: "Masculino",
-        precio: 90000,
+        precio: 78000,
         destacado: true,
         etiqueta: "Premium",
         imagen: "liquid_brun.jpeg",
@@ -758,7 +758,7 @@ const perfumes = [
         nombre: "Fakhar Rose Gold",
         marca: "Lattafa",
         genero: "Femenino",
-        precio: 58000,
+        precio: 60000,
         destacado: true,
         etiqueta: "Más vendido",
         imagen: "fakhar_rose_gold.jpg",
@@ -779,7 +779,7 @@ const perfumes = [
         nombre: "Yara Pink",
         marca: "Lattafa",
         genero: "Femenino",
-        precio: 56000,
+        precio: 58000,
         destacado: true,
         etiqueta: "Más vendido",
         imagen: "yara_pink.jpeg",
@@ -799,7 +799,7 @@ const perfumes = [
         nombre: "Yara Moi",
         marca: "Lattafa",
         genero: "Femenino",
-        precio: 65000,
+        precio: 50000,
         destacado: true,
         etiqueta: "Popular",
         imagen: "yara_moi.jpeg",
@@ -841,7 +841,7 @@ const perfumes = [
         nombre: "Haya Pink",
         marca: "Lattafa",
         genero: "Femenino",
-        precio: 50000,
+        precio: 60000,
         destacado: false,
         etiqueta: "",
         imagen: "haya_pink.jpeg",
@@ -904,7 +904,7 @@ const perfumes = [
         nombre: "Her Confession",
         marca: "Lattafa",
         genero: "Femenino",
-        precio: 58000,
+        precio: 70000,
         destacado: false,
         etiqueta: "",
         imagen: "her_confession.jpeg",
@@ -946,7 +946,7 @@ const perfumes = [
         nombre: "Club de Nuit Woman",
         marca: "Armaf",
         genero: "Femenino",
-        precio: 87000,
+        precio: 75000,
         destacado: true,
         etiqueta: "Premium",
         imagen: "club_de_nuit_woman.jpeg",
@@ -988,7 +988,7 @@ const perfumes = [
         nombre: "Hawas Malibu",
         marca: "Rasasi",
         genero: "Masculino",
-        precio: 62000,
+        precio: 78000,
         destacado: false,
         etiqueta: "",
         imagen: "hawas_malibu.jpeg",
@@ -1050,7 +1050,7 @@ const perfumes = [
     nombre: "His Confession",
     marca: "Lattafa",
     genero: "Masculino",
-    precio: 62000,
+    precio: 70000,
     destacado: true,
     etiqueta: "Nuevo",
     imagen: "his_confession.jpeg",
@@ -1092,7 +1092,7 @@ const perfumes = [
     nombre: "Musamam L",
     marca: "Lattafa",
     genero: "Masculino",
-    precio: 68000,
+    precio: 65000,
     destacado: false,
     etiqueta: "",
     imagen: "musamam_l.jpeg",
@@ -1134,7 +1134,7 @@ const perfumes = [
     nombre: "Odyssey Chocolate",
     marca: "Armaf",
     genero: "Masculino",
-    precio: 62000,
+    precio: 52000,
     destacado: true,
     etiqueta: "Nuevo",
     imagen: "odyssey_chocolate.jpeg",
@@ -1155,7 +1155,7 @@ const perfumes = [
     nombre: "Yara Elixir",
     marca: "Lattafa",
     genero: "Femenino",
-    precio: 65000,
+    precio: 68000,
     destacado: true,
     etiqueta: "Nuevo",
     imagen: "yara_elixir.jpeg",
@@ -1176,7 +1176,7 @@ const perfumes = [
     nombre: "Erba Pura Original",
     marca: "Xerjoff",
     genero: "Masculino",
-    precio: 400000,
+    precio: 350000,
     destacado: true,
     etiqueta: "Exclusivo",
     imagen: "erba_pura_original.jpg",
@@ -1196,7 +1196,7 @@ const perfumes = [
     nombre: "Odyssey Aqua",
     marca: "Armaf",
     genero: "Masculino",
-    precio: 60000,
+    precio: 66000,
     destacado: true,
     etiqueta: "Nuevo",
     imagen: "odyssey_aqua.jpeg",
@@ -1212,7 +1212,7 @@ const perfumes = [
     nombre: "9PM Rebel",
     marca: "Afnan",
     genero: "Masculino",
-    precio: 88000,
+    precio: 72000,
     destacado: false,
     etiqueta: "Nuevo",
     imagen: "9pm_rebel_edp.jpg",
@@ -1233,7 +1233,7 @@ const perfumes = [
     nombre: "9PM Night Out",
     marca: "Afnan",
     genero: "Masculino",
-    precio: 108000,
+    precio: 100000,
     destacado: false,
     etiqueta: "Nuevo",
     imagen: "9pm_night_out.jpg",
@@ -1337,7 +1337,7 @@ const perfumes = [
     nombre: "Ishq Al Shuyukh Gold",
     marca: "Lattafa",
     genero: "Unisex",
-    precio: 60000,
+    precio: 50000,
     destacado: false,
     etiqueta: "Nuevo",
     imagen: "ishq_al_shuyukh_gold.jpg",
@@ -1358,7 +1358,7 @@ const perfumes = [
     nombre: "Teriaq Intense",
     marca: "Lattafa",
     genero: "Unisex",
-    precio: 65000,
+    precio: 75000,
     destacado: false,
     etiqueta: "Nuevo",
     imagen: "al_teriaq_intense.jpg",
@@ -1372,6 +1372,174 @@ const perfumes = [
     fondo: "Haba tonka, ámbar y benjuí.",
 
     estacion: "Otoño e invierno. Ideal para noches y ocasiones especiales."
+},
+
+{
+    id: 67,
+    nombre: "Chants Tenderina",
+    marca: "Maison Alhambra",
+    genero: "Femenino",
+    precio: 56000,
+    destacado: false,
+    etiqueta: "Nuevo",
+    imagen: "tenderina.jpg",
+
+    descripcion: "Una fragancia femenina, fresca y delicada que abre con cítricos y frutas suaves, florece en un corazón floral y termina con un fondo cremoso de vainilla y almizcle.",
+
+    salida: "Bergamota, flor del pomelo y durazno.",
+
+    corazon: "Rosa, jazmín e iris.",
+
+    fondo: "Almizcle blanco, vainilla, vetiver y pachulí.",
+
+    estacion: "Primavera y verano. Ideal para el día."
+},
+
+{
+    id: 68,
+    nombre: "Odyssey Candee",
+    marca: "Armaf",
+    genero: "Femenino",
+    precio: 55000,
+    destacado: false,
+    etiqueta: "Nuevo",
+    imagen: "odyssey_candee.jpg",
+
+    descripcion: "Una fragancia afrutada y dulce que mezcla frutas rojas con caramelo y maracuyá, sobre un fondo cálido de pachulí, almizcle y ámbar.",
+
+    salida: "Fresa, frambuesa, geranio, durazno y bergamota.",
+
+    corazon: "Caramelo, jazmín y maracuyá.",
+
+    fondo: "Pachulí, almizcle y ámbar.",
+
+    estacion: "Primavera y verano. Ideal para el día y salidas informales."
+},
+
+{
+    id: 69,
+    nombre: "Angham",
+    marca: "Lattafa",
+    genero: "Femenino",
+    precio: 58000,
+    destacado: false,
+    etiqueta: "Nuevo",
+    imagen: "angham.jpg",
+
+    descripcion: "Una fragancia oriental vainilla que arranca especiada y fresca, se abraza con lavanda, praliné y cacao, y termina en un fondo dulce de vainilla, ámbar y almizcle.",
+
+    salida: "Jengibre, mandarina y pimienta rosa.",
+
+    corazon: "Lavanda, praliné, cacao y jazmín.",
+
+    fondo: "Vainilla, ámbar y almizcle.",
+
+    estacion: "Todo el año. Ideal para día y noche."
+},
+
+{
+    id: 70,
+    nombre: "Rave Now",
+    marca: "Lattafa",
+    genero: "Masculino",
+    precio: 54000,
+    destacado: false,
+    etiqueta: "Nuevo",
+    imagen: "rave_now.jpg",
+
+    descripcion: "Una fragancia masculina intensa que abre con una explosión frutal de piña y manzana, evoluciona hacia un corazón floral y amaderado, y se asienta en un fondo dulce y almizclado.",
+
+    salida: "Piña, bergamota, manzana y grosella negra.",
+
+    corazon: "Abedul, pachulí, jazmín marroquí y rosa.",
+
+    fondo: "Almizcle, vainilla, musgo de roble y ámbar gris.",
+
+    estacion: "Otoño e invierno. Ideal para la noche."
+},
+
+{
+    id: 71,
+    nombre: "Amber Oud Dubai Night",
+    marca: "Al Haramain",
+    genero: "Masculino",
+    precio: 100000,
+    destacado: false,
+    etiqueta: "Nuevo",
+    imagen: "dubai_night.jpg",
+
+    descripcion: "Una fragancia oriental amaderada de lujo que combina azafrán y especias con rosa búlgara y oud, sobre un fondo profundo de haba tonka, ámbar y almizcle blanco.",
+
+    salida: "Azafrán, bergamota y elemí.",
+
+    corazon: "Rosa búlgara, oud y lirio del valle.",
+
+    fondo: "Haba tonka, ámbar, almizcle blanco y musgo de roble.",
+
+    estacion: "Otoño e invierno. Ideal para noches y ocasiones especiales."
+},
+
+{
+    id: 72,
+    nombre: "Art of Universe",
+    marca: "Lattafa",
+    genero: "Masculino",
+    precio: 78000,
+    destacado: false,
+    etiqueta: "Nuevo",
+    imagen: "art_of_universe.jpg",
+
+    descripcion: "Una fragancia masculina fresca y elegante que abre con cítricos, jengibre y menta, tiene un corazón delicado de pera y flor de naranjo, y termina en un fondo ambarado y almizclado.",
+
+    salida: "Bergamota, mandarina, jengibre y menta.",
+
+    corazon: "Pera y flor de naranjo.",
+
+    fondo: "Cedro, ámbar y almizcle.",
+
+    estacion: "Primavera y verano. Ideal para el día."
+},
+
+{
+    id: 73,
+    nombre: "Veneno Black",
+    marca: "French Avenue",
+    genero: "Unisex",
+    precio: 85000,
+    destacado: false,
+    etiqueta: "Nuevo",
+    imagen: "veneno_black.jpg",
+
+    descripcion: "Una fragancia envolvente y misteriosa que abre con manzana, canela y humo, se asienta en un carácter especiado de gamuza y tabaco, y termina con un fondo dulce de vainilla bourbon.",
+
+    salida: "Manzana, canela y humo.",
+
+    corazon: "Gamuza y tabaco.",
+
+    fondo: "Vainilla bourbon y orcanox.",
+
+    estacion: "Otoño e invierno. Ideal para la noche."
+},
+
+{
+    id: 74,
+    nombre: "Hawas Fire",
+    marca: "Rasasi",
+    genero: "Masculino",
+    precio: 76000,
+    destacado: false,
+    etiqueta: "Nuevo",
+    imagen: "hawas_fire.jpg",
+
+    descripcion: "Una fragancia masculina fresca y intensa que abre con hierbas aromáticas, florece en jazmín egipcio con un toque marino, y termina en un fondo ambarado con notas minerales.",
+
+    salida: "Salvia francesa.",
+
+    corazon: "Jazmín egipcio y notas marinas.",
+
+    fondo: "Ámbar, notas minerales y ámbar gris.",
+
+    estacion: "Primavera y verano. Ideal para el día."
 },
 
 

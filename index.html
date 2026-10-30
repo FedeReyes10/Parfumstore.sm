@@ -47,6 +47,7 @@
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#categorias">Catálogo</a></li>
+                <li><a href="#accesorios">Accesorios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -134,6 +135,22 @@
             <p>Fragancias sofisticadas para cada ocasión.</p>
 
             <a href="javascript:void(0)" class="btn-categoria" onclick="mostrarCategoria('Femenino')">
+            Explorar colección
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="categoria-card accesorio">
+
+        <div class="overlay">
+
+            <h3>Accesorios</h3>
+
+            <p>Parlantes y complementos para tu experiencia.</p>
+
+            <a href="javascript:void(0)" class="btn-categoria" onclick="mostrarCategoria('Accesorio')">
             Explorar colección
             </a>
 
@@ -264,6 +281,27 @@
 
 </section>
 
+<!-- ================= ACCESORIOS ================= -->
+
+<section id="accesorios" class="seccion-accesorios">
+
+    <div class="titulo-seccion">
+
+        <span>NO SOLO PERFUMES</span>
+
+        <h2>Accesorios</h2>
+
+        <p>
+            Parlantes y complementos para acompañar tu experiencia.
+        </p>
+
+    </div>
+
+    <div id="gridAccesorios" class="grid-perfumes"></div>
+
+
+</section>
+
 
     <!-- ================= CONTACTO ================= -->
 
@@ -335,21 +373,25 @@
 
             <p id="modalDescripcion"></p>
 
-            <h4>🌿 Notas de salida</h4>
+            <div id="modalNotas">
 
-            <p id="modalSalida"></p>
+                <h4>🌿 Notas de salida</h4>
 
-            <h4>❤️ Notas de corazón</h4>
+                <p id="modalSalida"></p>
 
-            <p id="modalCorazon"></p>
+                <h4>❤️ Notas de corazón</h4>
 
-            <h4>🌳 Notas de fondo</h4>
+                <p id="modalCorazon"></p>
 
-            <p id="modalFondo"></p>
+                <h4>🌳 Notas de fondo</h4>
 
-            <h4>🍂 Estación recomendada</h4>
+                <p id="modalFondo"></p>
 
-            <p id="modalEstacion"></p>
+                <h4>🍂 Estación recomendada</h4>
+
+                <p id="modalEstacion"></p>
+
+            </div>
 
             <a id="modalWhatsapp" class="btn" target="_blank">
                 Consultar por WhatsApp
@@ -363,6 +405,7 @@
 
 
 <script src="perfumes.js"></script>
+<script src="accesorios.js"></script>
 <script src="app.js"></script>
 
 </body>
