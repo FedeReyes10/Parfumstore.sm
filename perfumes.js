@@ -1542,5 +1542,25 @@ const perfumes = [
     estacion: "Primavera y verano. Ideal para el día."
 },
 
+{    id: 75,
+     nombre: "Mayar EDP",
+     marca: "Lattafa",
+     genero: "Femenino",
+     precio: 56000,
+     destacado: false, 
+     etiqueta: "Nuevo",
+     imagen: "mayar_edp.jpg",
+
+     descripcion: "Fragancia femenina dulce y envolvente con un perfil floral y amaderado, ideal para uso diario y ocasiones especiales.",
+
+     salida: "Notas dulces y especiadas.",
+
+     corazon: "Notas florales y amaderadas.",
+
+     fondo: "Almizcle y vainilla.",
+
+     estacion: "Otoño e invierno. Ideal para noches."
+    }
+
 
 ];
