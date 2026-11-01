@@ -168,19 +168,36 @@ inputBuscar.addEventListener("input", () => {
     }
 
 
-    const filtrados = productos.filter(perfume => {
-
-        return (
-
+    // Separar resultados: si hay accesorios, solo mostrar accesorios; si hay perfumes, solo perfumes
+    const perfumesFiltrados = productos.filter(perfume =>
+        perfume.genero !== "Accesorio" &&
+        (
             perfume.nombre.toLowerCase().includes(texto) ||
+            perfume.marca.toLowerCase().includes(texto)
+        )
+    );
 
-            perfume.marca.toLowerCase().includes(texto) ||
+    const accesoriosFiltrados = productos.filter(perfume =>
+        perfume.genero === "Accesorio" &&
+        (
+            perfume.nombre.toLowerCase().includes(texto) ||
+            perfume.marca.toLowerCase().includes(texto)
+        )
+    );
 
-            perfume.genero.toLowerCase().includes(texto)
+    // Unir solo los que no están vacíos (quitar duplicados por si un id aparece en ambos)
+    let filtrados;
 
-        );
-
-    });
+    if (accesoriosFiltrados.length > 0 && perfumesFiltrados.length === 0) {
+        filtrados = accesoriosFiltrados;
+    } else if (perfumesFiltrados.length > 0 && accesoriosFiltrados.length === 0) {
+        filtrados = perfumesFiltrados;
+    } else {
+        // Si ambos tienen resultados, combinarlos sin repetir IDs
+        const todos = [...perfumesFiltrados, ...accesoriosFiltrados];
+        const únicos = [...new Set(todos.map(p => p.id))];
+        filtrados = únicos.map(id => [...perfumesFiltrados, ...accesoriosFiltrados].find(p => p.id === id));
+    }
 
 
     filtrados.forEach(perfume => {
