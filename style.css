@@ -308,16 +308,16 @@ section h2{
 
 .accesorio{
 
-    /* Imagen de banner desde el Word (jpg). Se muestra detrás del título y precio de la tarjeta.
-       Si no querés usarla, dejá el comentario de abajo y sigue el fondo oscuro. */
+    /* Mientras no haya imagen de banner, se usa un fondo
+       oscuro con el mismo tono dorado del sitio.
+       Cuando tengas la foto, se reemplaza por:
+       url("imagenes/banner/accesorio_banner.jpg"); */
 
     background-image:
-    url("imagenes/banner/accesorio_banner.jpg"),
-
     linear-gradient(rgba(0,0,0,.25),
     rgba(0,0,0,.75)),
-
     linear-gradient(135deg,#1c1c1c,#2b2410);
+    url("imagenes/banner/accesorio_banner.jpg");
 
 }
 
@@ -333,16 +333,15 @@ section h2{
 
     width:100%;
 
-    padding:25px;
+    padding:40px;
 
-    /* Fondo semi-transparente para que se note la imagen banner de abajo */
     background:linear-gradient(
         to top,
-        rgba(0,0,0,.4),
-        rgba(0,0,0,.1)
+        rgba(0,0,0,.92),
+        rgba(0,0,0,.15)
     );
 
-    transform:translateY(0);
+    transform:translateY(90px);
 
     transition:.4s;
 }
